@@ -1,0 +1,30 @@
+
+<div class="card mb-3" style="max-width: 600px ; margin-left: auto; margin-right: auto; margin-top: 15vh;">
+  <div class="heading"
+    style=" text-align: center;  ; background-color: greenyellow; border-radius: 5px; font-size: larger; height: auto; width: 500px; padding: 10px; margin-left: auto; margin-right: auto; margin-top: 20px;">
+    <b>Ticket Details</b>
+  </div>
+
+  <div class="heading"
+  style=" text-align: center; border: 2px solid black; border-radius: 5px; background-color: red; color: yellow; font-size: larger; height: auto; width: 500px; padding: 10px; margin-left: auto; margin-right: auto; margin-top: 20px;">
+  <b>Status : CONFIRMED</b>
+</div>
+
+  <div class="row no-gutters">
+
+    <div class="col-md-4" style="padding: 10px;">
+      <img src="{{flightdetails[0].Logo}}" class="card-img" alt="" style="margin: 20px;">
+    </div>
+    <div class="col-md-8" >
+      <div class="card-body " style="margin-left : 40px;">
+        <h3 class="card-title"><u>{{flightdetails[0].Name}}</u></h3>
+        <p class="card-text"><b>From :</b> New Delhi, India</p>
+          <p class="card-text"><b>To :</b> Mumbai, India</p>
+          <p class="card-text"><b>Departure :</b> {{flightdetails[0].DepartureTime}}</p>
+          <p class="card-text"><b>Arrival :</b>  {{flightdetails[0].ArrivalTime}}</p>
+          <p class="card-text"><b>Duration :</b>  {{flightdetails[0].Duration}}</p>
+          <p class="card-text"><b>Price :</b>  {{flightdetails[0].Price}}</p>
+      </div>
+    </div>
+  </div>
+</div>

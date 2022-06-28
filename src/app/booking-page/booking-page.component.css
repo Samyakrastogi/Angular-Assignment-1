@@ -1,0 +1,13 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+html{
+  font-size: 1rem;
+}
+
+.blue{
+  color: blue;
+}
+
+.black{
+  color: black;
+}

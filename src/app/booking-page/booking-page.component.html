@@ -1,0 +1,133 @@
+<p style="margin-left: 2vw; margin-top: 2vh;" *ngIf="showing">Sort By</p>
+<!-- Sorting Bar  -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 97vw; height: 8vh; margin:10px; border-radius: 5px;">
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-01" style="padding: 10px; margin: 10px;">
+      <li class="nav-item " style="margin-left: 2vw;">
+        <a class="nav-link"  (click)="Departuresorting()"><b>DEPARTURE </b></a>
+      </li>
+      <li class="nav-item" style="margin-left: 12vw">
+        <a class="nav-link"  (click)="Durationsorting()"><b>DURATION</b></a>
+      </li>
+      <li class="nav-item" style="margin-left: 13vw;">
+        <a class="nav-link "  (click)="Arrivalsorting()"><b>ARRIVAL</b></a>
+      </li>
+      <li class="nav-item" style="margin-left: 28vw;">
+        <a class="nav-link " (click)="Pricesorting()"><b>PRICE</b>
+          <i class="bi bi-arrow-up"></i>
+        </a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+
+
+<!-- 1st Card -->
+<div class="card shadow" style="width: 97vw; height: 32vh; margin:10px;flex-direction: row; border-radius: 10px;">
+  <div class="row g-0">
+    <div class="col-sm-5" style="display: flex;">
+      <img src="{{flightdetails[0].Logo}}" class="card-img-top" style="width: 5vw;height:5vw;padding: 8px; margin-left: 2vw;" alt="...">
+      <h4 style="margin-left: 0vw; padding: 1vw;">Vistara</h4>
+    </div>
+
+    <div style="margin-top: -15px;">
+      <span id="text1" style=" font-size: small; margin-left: 2vw; font-family: Arial, Helvetica, sans-serif;"><b>{{flightdetails[0].From}}</b>, New Delhi, India </span>
+      <span id="text2" style=" font-size: small;  margin-left: 31vw; font-family: Arial, Helvetica, sans-serif;"><b>{{flightdetails[0].To}}</b>,Mumbai, India</span>
+    </div>
+
+    <div class="num" style="margin-top: -20px;">
+      <span style="margin-left: 4vw; margin-top: 1vw; font-size: large; font-family: Arial, Helvetica, sans-serif;"><b>{{flightdetails[0].DepartureTime}}</b></span>
+      <span style="margin-left: 18vw; font-size: medium; font-family: Arial, Helvetica, sans-serif;"><b>{{flightdetails[0].Duration}}</b></span>
+      <span style="margin-left: 16vw; font-size: large; font-family: Arial, Helvetica, sans-serif;"><b>{{flightdetails[0].ArrivalTime}}</b></span>
+      <span style="margin-left: 30vw; font-size: large; font-family: Arial, Helvetica, sans-serif;"><b>{{flightdetails[0].Price}}</b></span>
+      <span style="margin-left: 2vw;"><button style="background-color: orangered; padding-left: 25px; padding-right: 25px;
+       margin: 5px; padding-bottom: 8px; padding-top: 8px; color: white; border-radius: 5px; border: none;"
+       type="button" routerLink="booked-page1"> BOOK</button></span>
+    </div>
+
+    <div class="emi" style="margin-top: -28px;">
+      <span style= "margin-left: 72vw; font-size: 13px;;">No Cost EMI from <b>{{flightdetails[0].EMI}}</b></span>
+    </div>
+
+    <div class="last" style="margin-top: -20px;" >
+      <span style="margin-left: 2vw; color: grey;">Partially Refundable</span>
+      <span style="margin-left : 72vw; color: blue;"><b>Flight Details</b>
+        <i class="bi bi-caret-down-fill"></i>
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- 2nd Card -->
+<div class="card shadow" style="width: 97vw; height: 32vh; margin: 10px; flex-direction: row; border-radius: 10px;">
+  <div class="row g-0">
+    <div class="col-sm-5" style="display: flex;">
+      <img src="{{flightdetails[1].Logo}}" class="card-img-top" style="width: 5vw;height:5vw;padding: 8px; margin-left: 2vw;" alt="...">
+      <h4 style="margin-left: 0vw; padding: 1vw;">Spicejet</h4>
+    </div>
+
+    <div style="margin-top: -15px;">
+      <span id="text1" style=" font-size: small; margin-left: 2vw; font-family: Arial, Helvetica, sans-serif;"><b>{{flightdetails[1].From}}</b>, New Delhi, India </span>
+      <span id="text2" style=" font-size: small;  margin-left: 31vw; font-family: Arial, Helvetica, sans-serif;"><b>{{flightdetails[1].To}}</b>,Mumbai, India</span>
+    </div>
+
+    <div class="num" style="margin-top: -20px;">
+      <span style="margin-left: 4vw; margin-top: 1vw; font-size: large; font-family: Arial, Helvetica, sans-serif;"><b>{{flightdetails[1].DepartureTime}}</b></span>
+      <span style="margin-left: 18vw; font-size: medium; font-family: Arial, Helvetica, sans-serif;"><b>{{flightdetails[1].Duration}}</b></span>
+      <span style="margin-left: 16vw; font-size: large; font-family: Arial, Helvetica, sans-serif;"><b>{{flightdetails[1].ArrivalTime}}</b></span>
+      <span style="margin-left: 30vw; font-size: large; font-family: Arial, Helvetica, sans-serif;"><b>{{flightdetails[1].Price}}</b></span>
+      <span style="margin-left: 2vw;"><button style="background-color: orangered; padding-left: 25px; padding-right: 25px;
+          margin: 5px; padding-bottom: 8px; padding-top: 8px; color: white; border-radius: 5px; border: none;" type="button"
+          routerLink="booked-page2">BOOK</button></span>
+    </div>
+
+    <div class="emi" style="margin-top: -28px;">
+      <span style= "margin-left: 72vw; font-size: 13px;;">No Cost EMI from <b>{{flightdetails[1].EMI}}</b></span>
+    </div>
+
+    <div class="last" style="margin-top: -20px;" >
+      <span style="margin-left: 2vw; color: grey;">Partially Refundable</span>
+      <span style="margin-left : 72vw; color: blue;"><b>Flight Details</b>
+        <i class="bi bi-caret-down-fill"></i>
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- 3rd Card -->
+<div class="card shadow" style="width: 97vw; height: 32vh; margin: 10px;flex-direction: row; border-radius: 10px; ">
+  <div class="row g-0">
+    <div class="col-sm-5" style="display: flex;">
+      <img src="{{flightdetails[2].Logo}}" class="card-img-top" style="width: 5vw;height:5vw;padding: 8px; margin-left: 2vw;" alt="...">
+      <h4 style="margin-left: 0vw; padding: 1vw;">Spicejet</h4>
+    </div>
+
+    <div style="margin-top: -15px;">
+      <span id="text1" style=" font-size: small; margin-left: 2vw; font-family: Arial, Helvetica, sans-serif;"><b>{{flightdetails[2].From}}</b>, New Delhi, India </span>
+      <span id="text2" style=" font-size: small;  margin-left: 31vw; font-family: Arial, Helvetica, sans-serif;"><b>{{flightdetails[2].To}}</b>,Mumbai, India</span>
+    </div>
+
+    <div class="num" style="margin-top: -20px;">
+      <span style="margin-left: 4vw; margin-top: 1vw; font-size: large; font-family: Arial, Helvetica, sans-serif;"><b>{{flightdetails[2].DepartureTime}}</b></span>
+      <span style="margin-left: 18vw; font-size: medium; font-family: Arial, Helvetica, sans-serif;"><b>{{flightdetails[2].Duration}}</b></span>
+      <span style="margin-left: 16vw; font-size: large; font-family: Arial, Helvetica, sans-serif;"><b>{{flightdetails[2].ArrivalTime}}</b></span>
+      <span style="margin-left: 30vw; font-size: large; font-family: Arial, Helvetica, sans-serif;"><b>{{flightdetails[2].Price}}</b></span>
+      <span style="margin-left: 2vw;"><button style="background-color: orangered; padding-left: 25px; padding-right: 25px;
+          margin: 5px; padding-bottom: 8px; padding-top: 8px; color: white; border-radius: 5px; border: none;" type="button"
+          routerLink="booked-page3">BOOK</button></span>
+    </div>
+
+    <div class="emi" style="margin-top: -28px;">
+      <span style= "margin-left: 72vw; font-size: 13px;;">No Cost EMI from <b>{{flightdetails[2].EMI}}</b></span>
+    </div>
+
+    <div class="last" style="margin-top: -20px;" >
+      <span style="margin-left: 2vw; color: grey;">Partially Refundable</span>
+      <span style="margin-left : 72vw; color: blue;"><b>Flight Details</b>
+        <i class="bi bi-caret-down-fill"></i>
+      </span>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

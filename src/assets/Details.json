@@ -1,0 +1,40 @@
+[
+  {
+    "SNo" : 1,
+    "Name" : "Vistara",
+    "From" : "DEL",
+    "To" : "BOM",
+    "Logo" : "assets/vistara.jfif",
+    "DepartureTime" : "17:45",
+    "ArrivalTime" : "20:05",
+    "Duration" : "2h20m",
+    "Price" : "₹6,253",
+    "EMI" : "₹2,085"
+  },
+
+  {
+    "SNo" : 2,
+    "Name" : "Spicejet",
+    "From" : "DEL",
+    "To" : "BOM",
+    "Logo" : "assets/Spicejet.jfif",
+    "DepartureTime" : "18:35",
+    "ArrivalTime" : "20:50",
+    "Duration" : "2h 15m",
+    "Price" : "₹7,776",
+    "EMI" : "₹2,592"
+  },
+
+  {
+    "SNo" : 3,
+    "Name" : "Spicejet",
+    "From" : "DEL",
+    "To" : "BOM",
+    "Logo" : "assets/Spicejet.jfif",
+    "DepartureTime" : "19:45",
+    "ArrivalTime" : "22:05",
+    "Duration" : "2h 20m",
+    "Price" : "₹7,776",
+    "EMI" : "₹2,592"
+  }
+]

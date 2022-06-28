@@ -1,0 +1,39 @@
+
+
+<section class="vh-100" *ngIf="showing">
+  <div class="container-fluid h-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-md-9 col-lg-6 col-xl-5">
+        <img src="assets/loginlogo.jfif" style="height: 30vw; width: 45vw; margin-top: 12vh;"
+          class="img-fluid" alt="Sample image">
+      </div>
+      <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+        <h2 style="text-align :center; margin-top: 5vw;  color:white; background-color:red; border-radius: 1vw; padding: 1vw;">LOGIN </h2>
+        <form>
+
+          <!-- UserName input -->
+          <div class="form-outline mb-4" style="margin-top: 10vh;">
+            <label class="form-label" for="form3Example3">User Name</label>
+            <input type="username" id="form3Example3"  value="admin" class="form-control form-control-lg"
+              placeholder="Enter Username --> (admin)" required />
+          </div>
+
+          <!-- Password input -->
+          <div class="form-outline mb-3">
+            <label class="form-label" for="form3Example4">Password</label>
+            <input type="password" id="form3Example4" value="Admin@123" class="form-control form-control-lg"
+              placeholder="Enter  Password --> (Admin@123)" required />
+          </div>
+
+          <div class="text-center text-lg-start mt-4 pt-2">
+            <button type="button" class="btn btn-success btn-lg" routerLink="booking-page" value="Admin@123"
+              style="padding-left: 2.5rem; padding-right: 2.5rem; " (click)="submit()">Verify</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+<router-outlet></router-outlet>
